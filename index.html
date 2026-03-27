@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Mercuri Imóveis — Dashboard</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d0d0d;color:#ccc;font-family:'Segoe UI',system-ui,sans-serif;font-size:13px;height:100vh;overflow:hidden;display:flex;flex-direction:column}
+/* Header */
+header{display:flex;align-items:center;justify-content:space-between;padding:10px 24px;border-bottom:1px solid rgba(255,255,255,0.07);flex-shrink:0}
+.logo-wrap{display:flex;align-items:center;gap:12px}
+.logo-box{width:46px;height:46px;border:2px solid rgba(255,255,255,0.55);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.logo-m{font-size:22px;font-weight:700;color:#fff;font-family:Georgia,serif;letter-spacing:-1px}
+.logo-text .brand{font-size:19px;font-weight:700;letter-spacing:0.18em;color:#fff;line-height:1.1}
+.logo-text .sub{font-size:7.5px;letter-spacing:0.3em;color:rgba(255,255,255,0.4);margin-top:2px}
+.vdiv{width:1px;height:50px;background:rgba(255,255,255,0.1);margin:0 4px}
+.hdr-right{display:flex;align-items:center;gap:18px}
+.status-dot{width:8px;height:8px;border-radius:50%;background:#4caf50;box-shadow:0 0 8px rgba(76,175,80,0.8)}
+.clock-wrap{text-align:right}
+.clock{font-size:30px;font-weight:200;letter-spacing:0.06em;color:#fff;line-height:1}
+.clock-date{font-size:9.5px;letter-spacing:0.12em;color:rgba(255,255,255,0.4);margin-top:3px;text-transform:uppercase}
+.month-badge{border:1px solid rgba(255,255,255,0.22);padding:6px 14px;font-size:10.5px;letter-spacing:0.14em;color:rgba(255,255,255,0.65)}
+/* Main */
+main{display:flex;flex:1;overflow:hidden}
+/* Ranking */
+.ranking-section{flex:1;padding:18px 22px 12px;overflow-y:auto;border-right:1px solid rgba(255,255,255,0.06)}
+.section-title{font-size:13px;font-weight:700;letter-spacing:0.22em;color:#fff;margin-bottom:2px}
+.section-sub{font-size:8px;letter-spacing:0.18em;color:rgba(255,255,255,0.3);margin-bottom:14px;text-transform:uppercase}
+/* Table header */
+.rank-hdr,.rank-row{display:grid;grid-template-columns:36px 36px 1fr 64px 64px 64px 106px;align-items:center}
+.rank-hdr{padding:0 8px 6px;border-bottom:1px solid rgba(255,255,255,0.06);margin-bottom:4px}
+.rank-hdr .th{font-size:7.5px;letter-spacing:0.15em;color:rgba(255,255,255,0.28);text-align:center;text-transform:uppercase}
+.rank-hdr .th.left{text-align:left}
+/* Rows */
+.rank-row{padding:7px 8px;border-left:3px solid transparent;margin-bottom:2px;border-radius:1px;transition:background .2s}
+.rank-row:hover{background:rgba(255,255,255,0.03)}
+.rank-row.top-1{border-left-color:#c9a84c;background:rgba(201,168,76,0.04)}
+.rank-row.top-2{border-left-color:rgba(220,220,220,0.35)}
+.rank-row.top-3{border-left-color:rgba(205,127,50,0.45)}
+.rank-num{font-size:13px;color:rgba(255,255,255,0.38);text-align:center}
+.top-1 .rank-num{color:#c9a84c;font-weight:600}
+.top-2 .rank-num{color:rgba(255,255,255,0.65)}
+.top-3 .rank-num{color:rgba(205,127,50,0.65)}
+/* Avatar */
+.avatar{width:27px;height:27px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700;color:rgba(0,0,0,0.75);margin:0 auto;letter-spacing:0.03em}
+/* Corretor col */
+.corretor-col{padding:0 6px 0 2px}
+.corretor-name{font-size:12px;font-weight:500;color:rgba(255,255,255,0.82);margin-bottom:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.progress-wrap{position:relative}
+.progress-track{height:2.5px;background:rgba(255,255,255,0.07);border-radius:2px;position:relative}
+.progress-fill{height:100%;border-radius:2px;max-width:100%}
+.progress-fill.green{background:#4caf50}
+.progress-fill.dim{background:rgba(76,175,80,0.4)}
+.progress-fill.red{background:rgba(200,80,70,0.45)}
+.progress-label{position:absolute;right:0;top:-12px;font-size:7.5px;color:rgba(255,255,255,0.28);white-space:nowrap}
+/* Cells */
+.cell{text-align:center;font-size:12px;color:rgba(255,255,255,0.55)}
+.cell-pts{text-align:center;font-size:17px;font-weight:600;color:#fff}
+.top-1 .cell-pts{color:#c9a84c}
+/* VGC Panel */
+.vgc-panel{width:195px;min-width:195px;padding:18px 14px 14px;display:flex;flex-direction:column;overflow-y:auto}
+.vgc-title{font-size:13px;font-weight:700;letter-spacing:0.22em;color:#fff;margin-bottom:10px}
+.vgc-tabs{display:flex;gap:3px;margin-bottom:8px}
+.tab-btn{font-size:7.5px;letter-spacing:0.1em;padding:4px 7px;background:transparent;border:1px solid rgba(255,255,255,0.14);color:rgba(255,255,255,0.38);cursor:pointer;text-transform:uppercase;transition:all .15s}
+.tab-btn.active{background:rgba(255,255,255,0.09);color:rgba(255,255,255,0.82);border-color:rgba(255,255,255,0.28)}
+.vgc-sub{font-size:7.5px;letter-spacing:0.1em;color:rgba(255,255,255,0.3);margin-bottom:12px;line-height:1.5;text-transform:uppercase}
+/* VGC top 3 */
+.vgc-top-item{display:flex;align-items:center;padding:7px 10px;margin-bottom:4px;border:1px solid rgba(255,255,255,0.07);background:rgba(255,255,255,0.02)}
+.vgc-top-item.r1{border-color:#c9a84c;background:rgba(201,168,76,0.05)}
+.vgc-rank{font-size:13px;font-weight:600;color:rgba(255,255,255,0.35);min-width:22px}
+.r1 .vgc-rank{color:#c9a84c}
+.r2 .vgc-rank{color:rgba(255,255,255,0.6)}
+.r3 .vgc-rank{color:rgba(205,127,50,0.65)}
+.vgc-name{font-size:11px;color:rgba(255,255,255,0.78);flex:1;padding:0 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vgc-val{font-size:11px;font-weight:600;color:#d4a441;white-space:nowrap}
+/* VGC rest */
+.vgc-rest{font-size:10px;display:flex;align-items:center;padding:3.5px 2px;border-bottom:1px solid rgba(255,255,255,0.04)}
+.vgc-rest-r{color:rgba(255,255,255,0.28);min-width:20px;font-size:9.5px}
+.vgc-rest-n{flex:1;color:rgba(255,255,255,0.55);padding:0 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:underline;text-decoration-color:rgba(255,255,255,0.15)}
+.vgc-rest-v{color:#b8923a;white-space:nowrap}
+/* VGC total */
+.vgc-total-wrap{margin-top:auto;padding-top:12px;border-top:1px solid rgba(255,255,255,0.07)}
+.vgc-total-lbl{font-size:7.5px;letter-spacing:0.14em;color:rgba(255,255,255,0.3);margin-bottom:4px;text-transform:uppercase}
+.vgc-total-val{font-size:22px;font-weight:200;color:#d4a441;letter-spacing:0.02em}
+/* Scrollbar */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.12);border-radius:2px}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo-wrap">
+    <div class="logo-box"><div class="logo-m">M</div></div>
+    <div class="logo-text">
+      <div class="brand">MERCURI</div>
+      <div class="sub">NEGÓCIOS IMOBILIÁRIOS</div>
+    </div>
+  </div>
+  <div class="vdiv"></div>
+  <div class="hdr-right">
+    <div class="status-dot"></div>
+    <div class="clock-wrap">
+      <div class="clock" id="clock">00:00</div>
+      <div class="clock-date" id="clock-date">—</div>
+    </div>
+    <div class="month-badge" id="month-badge">— 2026</div>
+  </div>
+</header>
+<main>
+  <section class="ranking-section">
+    <div class="section-title">RANKING DE MOVIMENTO</div>
+    <div class="section-sub">Pontuação acumulada no mês</div>
+    <div class="rank-hdr">
+      <div class="th">#</div>
+      <div class="th"></div>
+      <div class="th left">CORRETOR</div>
+      <div class="th">CAPT.</div>
+      <div class="th">VIS.</div>
+      <div class="th">ATU.</div>
+      <div class="th">PTS MÊS</div>
+    </div>
+    <div id="ranking-list"></div>
+  </section>
+  <aside class="vgc-panel">
+    <div class="vgc-title">RANKING VGC</div>
+    <div class="vgc-tabs">
+      <button class="tab-btn active" data-tab="mes">MENSAL</button>
+      <button class="tab-btn" data-tab="trim">TRIMESTRAL</button>
+      <button class="tab-btn" data-tab="ano">ANUAL</button>
+    </div>
+    <div class="vgc-sub" id="vgc-sub">VALOR GERAL DE CAPTAÇÕES · MÊS ATUAL</div>
+    <div id="vgc-list"></div>
+    <div class="vgc-total-wrap">
+      <div class="vgc-total-lbl" id="vgc-total-lbl">TOTAL VGC — MÊS ATUAL</div>
+      <div class="vgc-total-val" id="vgc-total">R$ 0</div>
+    </div>
+  </aside>
+</main>
+<script>
+'use strict';
+let _data=null, _tab='mes';
+
+/* ── Utilities ── */
+function fmt(n){
+  if(n==null||isNaN(n))return'0';
+  return n%1===0?String(Math.round(n)):(+n).toFixed(1);
+}
+function fmtVgc(v){
+  if(!v)return'R$ 0';
+  const m=v/1e6;
+  return'R$ '+m.toFixed(1).replace('.',',')+(m>=1?' M':' K');
+}
+function avatarColor(nome){
+  let h=0;for(const c of nome)h=((h<<5)-h+c.charCodeAt(0))|0;
+  const colors=['#7b9e7a','#7a8f9e','#9e7a7a','#9e9a7a','#7a9e9b','#8a7a9e','#9e8c7a','#7a9e84','#9e7a91','#7a8c9e','#9e9e7a','#8a9e7a','#7a9c9e','#9e7e8a','#9e8a7a'];
+  return colors[Math.abs(h)%colors.length];
+}
+function initials(nome){
+  const p=nome.trim().split(' ').filter(Boolean);
+  return((p[0]||'?')[0]+(p.length>1?(p[p.length-1]||'')[0]:'')  ).toUpperCase();
+}
+
+/* ── Clock ── */
+const DIAS=['DOMINGO','SEGUNDA-FEIRA','TERÇA-FEIRA','QUARTA-FEIRA','QUINTA-FEIRA','SEXTA-FEIRA','SÁBADO'];
+const MESES=['JANEIRO','FEVEREIRO','MARÇO','ABRIL','MAIO','JUNHO','JULHO','AGOSTO','SETEMBRO','OUTUBRO','NOVEMBRO','DEZEMBRO'];
+function updateClock(){
+  const n=new Date();
+  const hh=String(n.getHours()).padStart(2,'0'),mm=String(n.getMinutes()).padStart(2,'0');
+  document.getElementById('clock').textContent=hh+':'+mm;
+  document.getElementById('clock-date').textContent=DIAS[n.getDay()]+' · '+n.getDate()+' DE '+MESES[n.getMonth()];
+  document.getElementById('month-badge').textContent=MESES[n.getMonth()]+' '+n.getFullYear();
+}
+setInterval(updateClock,1000);updateClock();
+
+/* ── Ranking ── */
+function renderRanking(data){
+  const meta=data.meta_mensal||30;
+  const corr=data.corretores.map(c=>({...c,pts:(+c.c||0)+(+c.v||0)*3+(+c.a||0)}));
+  corr.sort((a,b)=>b.pts-a.pts);
+  const list=document.getElementById('ranking-list');
+  list.innerHTML='';
+  corr.forEach((c,i)=>{
+    const rank=i+1;
+    const cls=rank===1?'top-1':rank===2?'top-2':rank===3?'top-3':'other';
+    const pct=Math.min(100,((+c.c||0)/meta)*100);
+    const fc=pct>=100?'green':pct>=50?'dim':'red';
+    const av=avatarColor(c.nome);
+    const ins=initials(c.nome);
+    const row=document.createElement('div');
+    row.className='rank-row '+cls;
+    row.innerHTML=
+      '<div class="rank-num">'+rank+'</div>'+
+      '<div><div class="avatar" style="background:'+av+'">'+ins+'</div></div>'+
+      '<div class="corretor-col">'+
+        '<div class="corretor-name">'+c.nome+'</div>'+
+        '<div class="progress-wrap">'+
+          '<div class="progress-track">'+
+            '<div class="progress-fill '+fc+'" style="width:'+pct.toFixed(1)+'%"></div>'+
+            '<div class="progress-label">'+fmt(c.c)+'/'+meta+'</div>'+
+          '</div>'+
+        '</div>'+
+      '</div>'+
+      '<div class="cell">'+fmt(c.c)+'</div>'+
+      '<div class="cell">'+(+c.v||0)+'</div>'+
+      '<div class="cell">'+(+c.a||0)+'</div>'+
+      '<div class="cell-pts">'+fmt(c.pts)+'</div>';
+    list.appendChild(row);
+  });
+}
+
+/* ── VGC ── */
+function renderVgc(data){
+  const subs={mes:'VALOR GERAL DE CAPTAÇÕES · MÊS ATUAL',trim:'VALOR GERAL DE CAPTAÇÕES · TRIMESTRE',ano:'VALOR GERAL DE CAPTAÇÕES · ANO'};
+  const lbls={mes:'TOTAL VGC — MÊS ATUAL',trim:'TOTAL VGC — TRIMESTRE',ano:'TOTAL VGC — ANO'};
+  const field={mes:'vgc',trim:'vgc_trim',ano:'vgc_ano'}[_tab]||'vgc';
+  document.getElementById('vgc-sub').textContent=subs[_tab];
+  document.getElementById('vgc-total-lbl').textContent=lbls[_tab];
+  const corr=data.corretores.map(c=>({nome:c.nome,v:+(c[field]||c.vgc||0)}));
+  corr.sort((a,b)=>b.v-a.v);
+  const total=corr.reduce((s,c)=>s+c.v,0);
+  document.getElementById('vgc-total').textContent=fmtVgc(total);
+  const list=document.getElementById('vgc-list');
+  list.innerHTML='';
+  const ords=['1º','2º','3º'];
+  const rcls=['r1','r2','r3'];
+  corr.slice(0,3).forEach((c,i)=>{
+    const el=document.createElement('div');
+    el.className='vgc-top-item '+rcls[i];
+    el.innerHTML='<div class="vgc-rank">'+ords[i]+'</div><div class="vgc-name">'+c.nome.split(' ')[0]+'</div><div class="vgc-val">'+fmtVgc(c.v)+'</div>';
+    list.appendChild(el);
+  });
+  corr.slice(3).forEach((c,i)=>{
+    const el=document.createElement('div');
+    el.className='vgc-rest';
+    el.innerHTML='<div class="vgc-rest-r">'+(i+4)+'°</div><div class="vgc-rest-n">'+c.nome.split(' ')[0]+'</div><div class="vgc-rest-v">'+fmtVgc(c.v)+'</div>';
+    list.appendChild(el);
+  });
+}
+
+/* ── Tabs ── */
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    _tab=btn.dataset.tab;
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    if(_data)renderVgc(_data);
+  });
+});
+
+/* ── Load data ── */
+function load(){
+  fetch('./data.json?_='+Date.now())
+    .then(r=>r.json())
+    .then(d=>{_data=d;renderRanking(d);renderVgc(d);})
+    .catch(e=>console.error('data.json error:',e));
+}
+load();
+setInterval(load,5*60*1000);
+</script>
+</body>
+</html>
