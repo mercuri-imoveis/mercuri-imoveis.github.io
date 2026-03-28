@@ -118,7 +118,7 @@ const COLORS=['#5D4E6D','#7B6FA0','#4A7C8E','#6B8F71','#8B6F47','#7A4F6D','#4F7A
 function fmtM(v){if(!v)return'R$ 0';const m=v/1e6;return m>=1?'R$ '+(m%1?m.toFixed(1):m.toFixed(0))+' M':'R$ '+(v/1e3).toFixed(0)+' K'}
 function fmtP(v){return typeof v==='number'?v.toFixed(1):'-'}
 function initials(n){const p=n.trim().split(' ');return(p.length>=2?p[0][0]+p[p.length-1][0]:n.slice(0,2)).toUpperCase()}
-function calcPts(c){return(c.c||0)*3+(c.v||0)*2+(c.a||0)}
+function calcPts(c){return(c.c||0)+(c.v||0)+(c.a||0)}
 
 function renderRanking(list){
   const s=[...list].map(c=>({...c,pts:calcPts(c)})).sort((a,b)=>b.pts-a.pts);
