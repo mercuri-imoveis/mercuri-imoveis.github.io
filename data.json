@@ -1,24 +1,175 @@
 {
-  "hoje": { "cap": 0, "vis": 0, "atu": 2 },
-  "mes":  { "cap": 206.17, "vis": 0, "atu": 440 },
-  "trim": { "cap": 458.67, "vis": 64, "atu": 1807 },
-  "ano":  { "cap": 458.67, "vis": 64, "atu": 1807 },
+  "hoje": {
+    "cap": 0,
+    "vis": 0,
+    "atu": 0
+  },
+  "mes": {
+    "cap": 206.17,
+    "vis": 0,
+    "atu": 440
+  },
+  "trim": {
+    "cap": 458.67,
+    "vis": 64,
+    "atu": 1807
+  },
+  "ano": {
+    "cap": 458.67,
+    "vis": 64,
+    "atu": 1807
+  },
   "meta_mensal": 30,
   "corretores": [
-    { "nome": "Luana Nascimento",  "c": 18.8, "v": 0, "a": 118, "vgc": 13400000, "atu_trim": 118, "ptrim": 0, "pano": 0 },
-    { "nome": "Nathália Machado",  "c": 17.0, "v": 0, "a":  69, "vgc":  7600000, "atu_trim":  69, "ptrim": 0, "pano": 0 },
-    { "nome": "Ivan Santos",       "c": 10.0, "v": 0, "a":  65, "vgc": 11100000, "atu_trim":  65, "ptrim": 0, "pano": 0 },
-    { "nome": "Daniel Paterline",  "c": 15.5, "v": 0, "a":  48, "vgc": 15200000, "atu_trim":  48, "ptrim": 0, "pano": 0 },
-    { "nome": "Thaynã Kauany",     "c": 23.7, "v": 0, "a":  26, "vgc": 46400000, "atu_trim":  26, "ptrim": 0, "pano": 0 },
-    { "nome": "Vinícius Freitas",  "c": 11.0, "v": 0, "a":  34, "vgc":  3300000, "atu_trim":  34, "ptrim": 0, "pano": 0 },
-    { "nome": "Julio Santos",      "c": 11.7, "v": 0, "a":  30, "vgc": 13600000, "atu_trim":  30, "ptrim": 0, "pano": 0 },
-    { "nome": "Bruno Ferreira",    "c":  5.8, "v": 0, "a":  20, "vgc":  4000000, "atu_trim":  20, "ptrim": 0, "pano": 0 },
-    { "nome": "Mary Andrade",      "c": 24.0, "v": 0, "a":   0, "vgc": 14100000, "atu_trim":   0, "ptrim": 0, "pano": 0 },
-    { "nome": "Lucas Almeida",     "c":  5.3, "v": 0, "a":  14, "vgc":  5400000, "atu_trim":  14, "ptrim": 0, "pano": 0 },
-    { "nome": "João Pedro",        "c": 10.5, "v": 0, "a":   6, "vgc":  3300000, "atu_trim":   6, "ptrim": 0, "pano": 0 },
-    { "nome": "Gilson Santos",     "c": 12.0, "v": 0, "a":   3, "vgc": 11100000, "atu_trim":   3, "ptrim": 0, "pano": 0 },
-    { "nome": "Isis Castro",       "c": 13.5, "v": 0, "a":   1, "vgc":  7700000, "atu_trim":   1, "ptrim": 0, "pano": 0 },
-    { "nome": "Augusto Silva",     "c": 11.8, "v": 0, "a":   2, "vgc": 10900000, "atu_trim":   2, "ptrim": 0, "pano": 0 },
-    { "nome": "Fernanda Cabañas",  "c": 10.5, "v": 0, "a":   3, "vgc":  2100000, "atu_trim":   3, "ptrim": 0, "pano": 0 }
+    {
+      "nome": "Luana Nascimento",
+      "c": 18.8,
+      "v": 0,
+      "a": 118,
+      "vgc": 13400000,
+      "atu_trim": 118,
+      "ptrim": 0,
+      "pano": 0
+    },
+    {
+      "nome": "Nathália Machado",
+      "c": 17,
+      "v": 0,
+      "a": 69,
+      "vgc": 7600000,
+      "atu_trim": 69,
+      "ptrim": 0,
+      "pano": 0
+    },
+    {
+      "nome": "Ivan Santos",
+      "c": 10,
+      "v": 0,
+      "a": 65,
+      "vgc": 11100000,
+      "atu_trim": 65,
+      "ptrim": 0,
+      "pano": 0
+    },
+    {
+      "nome": "Daniel Paterline",
+      "c": 15.5,
+      "v": 0,
+      "a": 48,
+      "vgc": 15200000,
+      "atu_trim": 48,
+      "ptrim": 0,
+      "pano": 0
+    },
+    {
+      "nome": "Thaynã Kauany",
+      "c": 23.7,
+      "v": 0,
+      "a": 26,
+      "vgc": 46400000,
+      "atu_trim": 26,
+      "ptrim": 0,
+      "pano": 0
+    },
+    {
+      "nome": "Vinícius Freitas",
+      "c": 11,
+      "v": 0,
+      "a": 34,
+      "vgc": 3300000,
+      "atu_trim": 34,
+      "ptrim": 0,
+      "pano": 0
+    },
+    {
+      "nome": "Julio Santos",
+      "c": 11.7,
+      "v": 0,
+      "a": 30,
+      "vgc": 13600000,
+      "atu_trim": 30,
+      "ptrim": 0,
+      "pano": 0
+    },
+    {
+      "nome": "Bruno Ferreira",
+      "c": 5.8,
+      "v": 0,
+      "a": 20,
+      "vgc": 4000000,
+      "atu_trim": 20,
+      "ptrim": 0,
+      "pano": 0
+    },
+    {
+      "nome": "Mary Andrade",
+      "c": 24,
+      "v": 0,
+      "a": 0,
+      "vgc": 14100000,
+      "atu_trim": 0,
+      "ptrim": 0,
+      "pano": 0
+    },
+    {
+      "nome": "Lucas Almeida",
+      "c": 5.3,
+      "v": 0,
+      "a": 14,
+      "vgc": 5400000,
+      "atu_trim": 14,
+      "ptrim": 0,
+      "pano": 0
+    },
+    {
+      "nome": "João Pedro",
+      "c": 10.5,
+      "v": 0,
+      "a": 6,
+      "vgc": 3300000,
+      "atu_trim": 6,
+      "ptrim": 0,
+      "pano": 0
+    },
+    {
+      "nome": "Gilson Santos",
+      "c": 12,
+      "v": 0,
+      "a": 3,
+      "vgc": 11100000,
+      "atu_trim": 3,
+      "ptrim": 0,
+      "pano": 0
+    },
+    {
+      "nome": "Isis Castro",
+      "c": 13.5,
+      "v": 0,
+      "a": 1,
+      "vgc": 7700000,
+      "atu_trim": 1,
+      "ptrim": 0,
+      "pano": 0
+    },
+    {
+      "nome": "Augusto Silva",
+      "c": 11.8,
+      "v": 0,
+      "a": 2,
+      "vgc": 10900000,
+      "atu_trim": 2,
+      "ptrim": 0,
+      "pano": 0
+    },
+    {
+      "nome": "Fernanda Cabañas",
+      "c": 10.5,
+      "v": 0,
+      "a": 3,
+      "vgc": 2100000,
+      "atu_trim": 3,
+      "ptrim": 0,
+      "pano": 0
+    }
   ]
 }
