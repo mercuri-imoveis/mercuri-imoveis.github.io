@@ -87,6 +87,10 @@ main{display:flex;flex:1;overflow:hidden}
 ::-webkit-scrollbar{width:4px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.12);border-radius:2px}
+
+.last-update-wrap{text-align:right;margin-top:4px}
+.last-update-lbl{font-size:7.5px;letter-spacing:0.18em;color:rgba(255,255,255,0.3);text-transform:uppercase}
+.last-update-val{font-size:10px;letter-spacing:0.08em;color:rgba(255,255,255,0.55);margin-top:1px}
 </style>
 </head>
 <body>
@@ -106,6 +110,10 @@ main{display:flex;flex:1;overflow:hidden}
       <div class="clock-date" id="clock-date">—</div>
     </div>
     <div class="month-badge" id="month-badge">— 2026</div>
+    <div class="last-update-wrap">
+      <div class="last-update-lbl">ÚLTIMA ATUALIZAÇÃO</div>
+      <div class="last-update-val" id="last-update-val">—</div>
+    </div>
   </div>
 </header>
 <main>
@@ -127,8 +135,8 @@ main{display:flex;flex:1;overflow:hidden}
     <div class="vgc-title">RANKING VGC</div>
     <div class="vgc-tabs">
       <button class="tab-btn active" data-tab="mes">MENSAL</button>
-      <button class="tab-btn" data-tab="trim">TRIMESTRAL</button>
-      <button class="tab-btn" data-tab="ano">ANUAL</button>
+      
+      
     </div>
     <div class="vgc-sub" id="vgc-sub">VALOR GERAL DE CAPTAÇÕES · MÊS ATUAL</div>
     <div id="vgc-list"></div>
