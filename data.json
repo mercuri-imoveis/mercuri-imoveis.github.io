@@ -1,145 +1,145 @@
 {
     "hoje": {
-          "cap": 0,
-          "vis": 0,
-          "atu": 0
+        "cap": 0,
+        "vis": 0,
+        "atu": 0
     },
     "mes": {
-          "cap": 149,
-          "vis": 24,
-          "atu": 127
+        "cap": 149,
+        "vis": 23,
+        "atu": 134
     },
     "trim": {
-          "cap": 464.66,
-          "vis": 64,
-          "atu": 1807
+        "cap": 464.66,
+        "vis": 64,
+        "atu": 1807
     },
     "ano": {
-          "cap": 464.66,
-          "vis": 64,
-          "atu": 1807
+        "cap": 464.66,
+        "vis": 64,
+        "atu": 1807
     },
     "meta_mensal": 30,
     "corretores": [
-          {
-                  "nome": "Mary Andrade",
-                  "c": 25,
-                  "vgc": 17482500,
-                  "v": 0,
-                  "a": 11,
-                  "fech": 0
-          },
-          {
-                  "nome": "Gilson Santos",
-                  "c": 17,
-                  "vgc": 11937500,
-                  "v": 3,
-                  "a": 5,
-                  "fech": 0
-          },
-          {
-                  "nome": "Isis Castro",
-                  "c": 13,
-                  "vgc": 15350000,
-                  "v": 6,
-                  "a": 12,
-                  "fech": 2
-          },
-          {
-                  "nome": "Ivan Santos",
-                  "c": 13,
-                  "vgc": 28778333,
-                  "v": 0,
-                  "a": 9,
-                  "fech": 0
-          },
-          {
-                  "nome": "Thaynã Kauany",
-                  "c": 11,
-                  "vgc": 9791667,
-                  "v": 0,
-                  "a": 12,
-                  "fech": 0
-          },
-          {
-                  "nome": "Daniel Paterline",
-                  "c": 10,
-                  "vgc": 8460667,
-                  "v": 2,
-                  "a": 10,
-                  "fech": 0
-          },
-          {
-                  "nome": "Fernanda Cabañas",
-                  "c": 10,
-                  "vgc": 5841500,
-                  "v": 1,
-                  "a": 1,
-                  "fech": 0
-          },
-          {
-                  "nome": "João Pedro",
-                  "c": 9,
-                  "vgc": 4840000,
-                  "v": 0,
-                  "a": 0,
-                  "fech": 0
-          },
-          {
-                  "nome": "Nathália Machado",
-                  "c": 8,
-                  "vgc": 12031667,
-                  "v": 1,
-                  "a": 5,
-                  "fech": 1
-          },
-          {
-                  "nome": "Luana Nascimento",
-                  "c": 8,
-                  "vgc": 6331667,
-                  "v": 4,
-                  "a": 6,
-                  "fech": 0
-          },
-          {
-                  "nome": "Vinícius Freitas",
-                  "c": 8,
-                  "vgc": 12596667,
-                  "v": 2,
-                  "a": 7,
-                  "fech": 0
-          },
-          {
-                  "nome": "Lucas Almeida",
-                  "c": 6,
-                  "vgc": 15988333,
-                  "v": 1,
-                  "a": 2,
-                  "fech": 0
-          },
-          {
-                  "nome": "Augusto Silva",
-                  "c": 5,
-                  "vgc": 10765000,
-                  "v": 1,
-                  "a": 24,
-                  "fech": 0
-          },
-          {
-                  "nome": "Bruno Ferreira",
-                  "c": 4,
-                  "vgc": 5937500,
-                  "v": 0,
-                  "a": 9,
-                  "fech": 0
-          },
-          {
-                  "nome": "Julio Santos",
-                  "c": 3,
-                  "vgc": 1625000,
-                  "v": 3,
-                  "a": 9,
-                  "fech": 0
-          }
+        {
+            "nome": "Mary Andrade",
+            "c": 25,
+            "vgc": 17482500,
+            "v": 0,
+            "a": 13,
+            "fech": 0
+        },
+        {
+            "nome": "Gilson Santos",
+            "c": 17,
+            "vgc": 11937500,
+            "v": 0,
+            "a": 5,
+            "fech": 0
+        },
+        {
+            "nome": "Isis Castro",
+            "c": 13,
+            "vgc": 15350000,
+            "v": 0,
+            "a": 12,
+            "fech": 2
+        },
+        {
+            "nome": "Ivan Santos",
+            "c": 13,
+            "vgc": 28778333,
+            "v": 0,
+            "a": 11,
+            "fech": 0
+        },
+        {
+            "nome": "Thaynã Kauany",
+            "c": 11,
+            "vgc": 9791667,
+            "v": 0,
+            "a": 12,
+            "fech": 0
+        },
+        {
+            "nome": "Daniel Paterline",
+            "c": 10,
+            "vgc": 8460667,
+            "v": 0,
+            "a": 13,
+            "fech": 0
+        },
+        {
+            "nome": "Fernanda Cabañas",
+            "c": 10,
+            "vgc": 5841500,
+            "v": 0,
+            "a": 2,
+            "fech": 0
+        },
+        {
+            "nome": "João Pedro",
+            "c": 9,
+            "vgc": 4840000,
+            "v": 0,
+            "a": 0,
+            "fech": 0
+        },
+        {
+            "nome": "Nathália Machado",
+            "c": 8,
+            "vgc": 12031667,
+            "v": 0,
+            "a": 5,
+            "fech": 1
+        },
+        {
+            "nome": "Luana Nascimento",
+            "c": 8,
+            "vgc": 6331667,
+            "v": 0,
+            "a": 7,
+            "fech": 0
+        },
+        {
+            "nome": "Vinícius Freitas",
+            "c": 8,
+            "vgc": 12596667,
+            "v": 0,
+            "a": 7,
+            "fech": 0
+        },
+        {
+            "nome": "Lucas Almeida",
+            "c": 6,
+            "vgc": 15988333,
+            "v": 0,
+            "a": 2,
+            "fech": 0
+        },
+        {
+            "nome": "Augusto Silva",
+            "c": 5,
+            "vgc": 10765000,
+            "v": 0,
+            "a": 25,
+            "fech": 0
+        },
+        {
+            "nome": "Bruno Ferreira",
+            "c": 4,
+            "vgc": 5937500,
+            "v": 0,
+            "a": 10,
+            "fech": 0
+        },
+        {
+            "nome": "Julio Santos",
+            "c": 3,
+            "vgc": 1625000,
+            "v": 0,
+            "a": 9,
+            "fech": 0
+        }
     ]
-}
+        }
