@@ -1,24 +1,24 @@
 {
-    "hoje": { "cap": 0, "vis": 0, "atu": 0 },
-    "mes": { "cap": 149, "vis": 24, "atu": 134 },
-    "trim": { "cap": 464.66, "vis": 64, "atu": 1807 },
-    "ano": { "cap": 464.66, "vis": 64, "atu": 1807 },
-    "meta_mensal": 30,
-    "corretores": [
-      { "nome": "Mary Andrade",      "c": 24.5,  "vgc": 17482500,  "v": 0, "a": 13, "fech": 0, "prop": 0 },
-      { "nome": "Gilson Santos",     "c": 16.5,  "vgc": 11937500,  "v": 3, "a": 5,  "fech": 0, "prop": 0 },
-      { "nome": "Isis Castro",       "c": 12.5,  "vgc": 15350000,  "v": 6, "a": 12, "fech": 2, "prop": 3 },
-      { "nome": "Ivan Santos",       "c": 12.83, "vgc": 28778333,  "v": 0, "a": 11, "fech": 0, "prop": 0 },
-      { "nome": "Thaynã Kauany",     "c": 11.33, "vgc": 9791667,   "v": 0, "a": 12, "fech": 0, "prop": 1 },
-      { "nome": "Daniel Paterline",  "c": 9.83,  "vgc": 8460667,   "v": 2, "a": 13, "fech": 0, "prop": 1 },
-      { "nome": "Fernanda Cabañas",  "c": 10,    "vgc": 5841500,   "v": 1, "a": 2,  "fech": 0, "prop": 0.5 },
-      { "nome": "João Pedro",        "c": 8.5,   "vgc": 4840000,   "v": 0, "a": 0,  "fech": 0, "prop": 0 },
-      { "nome": "Nathália Machado",  "c": 8.33,  "vgc": 12031667,  "v": 1, "a": 5,  "fech": 1, "prop": 1 },
-      { "nome": "Luana Nascimento",  "c": 8.33,  "vgc": 6331667,   "v": 4, "a": 7,  "fech": 0, "prop": 0 },
-      { "nome": "Vinícius Freitas",  "c": 7.83,  "vgc": 12596667,  "v": 2, "a": 7,  "fech": 0, "prop": 2.5 },
-      { "nome": "Lucas Almeida",     "c": 6.33,  "vgc": 15988333,  "v": 1, "a": 2,  "fech": 0, "prop": 1 },
-      { "nome": "Augusto Silva",     "c": 5.17,  "vgc": 10765000,  "v": 1, "a": 25, "fech": 0, "prop": 2 },
-      { "nome": "Bruno Ferreira",    "c": 4,     "vgc": 5937500,   "v": 0, "a": 10, "fech": 0, "prop": 0 },
-      { "nome": "Julio Santos",      "c": 3,     "vgc": 1625000,   "v": 3, "a": 9,  "fech": 0, "prop": 1 }
-    ]
+        "hoje": { "cap": 0, "vis": 0, "atu": 0 },
+        "mes": { "cap": 183.5, "vis": 0, "atu": 164 },
+        "trim": { "cap": 499.16, "vis": 40, "atu": 1837 },
+        "ano": { "cap": 499.16, "vis": 40, "atu": 1837 },
+        "meta_mensal": 30,
+        "corretores": [
+                    { "nome": "Mary Andrade",     "c": 26,    "vgc": 18519000,  "v": 0, "a": 15, "fech": 0, "prop": 0 },
+                    { "nome": "Ivan Santos",      "c": 17.17, "vgc": 41201333,  "v": 0, "a": 14, "fech": 0, "prop": 1 },
+                    { "nome": "Gilson Santos",    "c": 17,    "vgc": 12714000,  "v": 0, "a": 6,  "fech": 0, "prop": 0 },
+                    { "nome": "Nathália Machado", "c": 16.33, "vgc": 16541667,  "v": 0, "a": 8,  "fech": 1, "prop": 2 },
+                    { "nome": "Vinícius Freitas", "c": 13.83, "vgc": 17171667,  "v": 0, "a": 12, "fech": 0, "prop": 3.5 },
+                    { "nome": "Isis Castro",      "c": 12.5,  "vgc": 15290000,  "v": 0, "a": 17, "fech": 2, "prop": 5 },
+                    { "nome": "Thaynã Kauany",    "c": 12.33, "vgc": 9961667,   "v": 0, "a": 15, "fech": 0, "prop": 1 },
+                    { "nome": "Fernanda Cabañas", "c": 12,    "vgc": 7171500,   "v": 0, "a": 2,  "fech": 0, "prop": 0.5 },
+                    { "nome": "Luana Nascimento", "c": 11.33, "vgc": 7836667,   "v": 0, "a": 11, "fech": 0, "prop": 0 },
+                    { "nome": "João Pedro",       "c": 10.5,  "vgc": 6990000,   "v": 0, "a": 0,  "fech": 0, "prop": 0 },
+                    { "nome": "Daniel Paterline", "c": 8.83,  "vgc": 7715667,   "v": 0, "a": 13, "fech": 0, "prop": 1 },
+                    { "nome": "Lucas Almeida",    "c": 8.17,  "vgc": 25287833,  "v": 0, "a": 2,  "fech": 0, "prop": 1 },
+                    { "nome": "Julio Santos",     "c": 6.5,   "vgc": 4870000,   "v": 0, "a": 9,  "fech": 0, "prop": 1 },
+                    { "nome": "Augusto Silva",    "c": 6,     "vgc": 11514500,  "v": 0, "a": 27, "fech": 0, "prop": 2 },
+                    { "nome": "Bruno Ferreira",   "c": 5,     "vgc": 7927500,   "v": 0, "a": 13, "fech": 0, "prop": 0 }
+        ]
 }
