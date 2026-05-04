@@ -1,23 +1,23 @@
 {
-                "hoje": { "cap": 7, "vis": 5, "atu": 18 },
-                "mes":  { "cap": 7, "vis": 5, "atu": 18 },
-                "trim": { "cap": 7, "vis": 5, "atu": 18 },
-                "ano":  { "cap": 7, "vis": 5, "atu": 18 },
-                "meta_mensal": 30,
-                "corretores": [
-                                        { "nome": "Luana Nascimento", "c": 2.5, "vgc": 1450000, "v": 0, "a": 0,  "fech": 0, "prop": 0 },
-                                        { "nome": "Thaynã Kauany",    "c": 2,   "vgc": 800000,  "v": 0, "a": 0,  "fech": 0, "prop": 0 },
-                                        { "nome": "Gilson Santos",     "c": 1,   "vgc": 465000,  "v": 1, "a": 0,  "fech": 0, "prop": 1 },
-                                        { "nome": "Mary Andrade",      "c": 1,   "vgc": 465000,  "v": 0, "a": 3,  "fech": 0, "prop": 0 },
-                                        { "nome": "Nathália Machado",  "c": 0.5, "vgc": 350000,  "v": 0, "a": 2,  "fech": 0, "prop": 0 },
-                                        { "nome": "Isis Castro",       "c": 0,   "vgc": 0,       "v": 2, "a": 3,  "fech": 0, "prop": 0 },
-                                        { "nome": "Ivan Santos",       "c": 0,   "vgc": 0,       "v": 2, "a": 3,  "fech": 0, "prop": 0 },
-                                        { "nome": "Augusto Silva",     "c": 0,   "vgc": 0,       "v": 0, "a": 2,  "fech": 0, "prop": 0 },
-                                        { "nome": "Bruno Ferreira",    "c": 0,   "vgc": 0,       "v": 0, "a": 1,  "fech": 0, "prop": 0 },
-                                        { "nome": "Fernanda Cabañas",  "c": 0,   "vgc": 0,       "v": 0, "a": 0,  "fech": 0, "prop": 0 },
-                                        { "nome": "João Pedro",        "c": 0,   "vgc": 0,       "v": 0, "a": 0,  "fech": 0, "prop": 0 },
-                                        { "nome": "Julio Santos",      "c": 0,   "vgc": 0,       "v": 0, "a": 0,  "fech": 0, "prop": 0 },
-                                        { "nome": "Lucas Almeida",     "c": 0,   "vgc": 0,       "v": 0, "a": 3,  "fech": 0, "prop": 0 },
-                                        { "nome": "Vinícius Freitas",  "c": 0,   "vgc": 0,       "v": 0, "a": 1,  "fech": 0, "prop": 0 }
-                ]
+                  "hoje": { "cap": 7, "vis": 0, "atu": 26 },
+                  "mes":  { "cap": 7, "vis": 0, "atu": 26 },
+                  "trim": { "cap": 7, "vis": 0, "atu": 26 },
+                  "ano":  { "cap": 7, "vis": 0, "atu": 26 },
+                  "meta_mensal": 30,
+                  "corretores": [
+                                                    { "nome": "Luana Nascimento",  "c": 2.5, "vgc": 1450000, "v": 0, "a": 2, "fech": 0, "prop": 0 },
+                                                    { "nome": "Thayna Kauany",     "c": 2,   "vgc": 800000,  "v": 0, "a": 0, "fech": 0, "prop": 0 },
+                                                    { "nome": "Gilson Santos",     "c": 1,   "vgc": 465000,  "v": 0, "a": 0, "fech": 0, "prop": 1 },
+                                                    { "nome": "Mary Andrade",      "c": 1,   "vgc": 465000,  "v": 0, "a": 4, "fech": 0, "prop": 0 },
+                                                    { "nome": "Nathalia Machado",  "c": 0.5, "vgc": 350000,  "v": 0, "a": 3, "fech": 0, "prop": 0 },
+                                                    { "nome": "Isis Castro",       "c": 0,   "vgc": 0,       "v": 0, "a": 4, "fech": 0, "prop": 0 },
+                                                    { "nome": "Ivan Santos",       "c": 0,   "vgc": 0,       "v": 0, "a": 3, "fech": 0, "prop": 0 },
+                                                    { "nome": "Lucas Almeida",     "c": 0,   "vgc": 0,       "v": 0, "a": 5, "fech": 0, "prop": 0 },
+                                                    { "nome": "Augusto Silva",     "c": 0,   "vgc": 0,       "v": 0, "a": 2, "fech": 0, "prop": 0 },
+                                                    { "nome": "Vinicius Freitas",  "c": 0,   "vgc": 0,       "v": 0, "a": 2, "fech": 0, "prop": 0 },
+                                                    { "nome": "Bruno Ferreira",    "c": 0,   "vgc": 0,       "v": 0, "a": 1, "fech": 0, "prop": 0 },
+                                                    { "nome": "Fernanda Cabanas",  "c": 0,   "vgc": 0,       "v": 0, "a": 0, "fech": 0, "prop": 0 },
+                                                    { "nome": "Joao Pedro",        "c": 0,   "vgc": 0,       "v": 0, "a": 0, "fech": 0, "prop": 0 },
+                                                    { "nome": "Julio Santos",      "c": 0,   "vgc": 0,       "v": 0, "a": 0, "fech": 0, "prop": 0 }
+                  ]
 }
