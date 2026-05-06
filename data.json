@@ -1,4 +1,5 @@
 {
+                  "atualizado_em": "2026-05-06T13:39:30Z",
                   "hoje": { "cap": 7, "vis": 0, "atu": 26 },
                   "mes":  { "cap": 7, "vis": 0, "atu": 26 },
                   "trim": { "cap": 7, "vis": 0, "atu": 26 },
@@ -16,6 +17,7 @@
                                                     { "nome": "Augusto Silva",     "c": 0,   "vgc": 0,       "v": 0, "a": 2, "fech": 0, "prop": 0 },
                                                     { "nome": "Vinicius Freitas",  "c": 0,   "vgc": 0,       "v": 0, "a": 2, "fech": 0, "prop": 0 },
                                                     { "nome": "Bruno Ferreira",    "c": 0,   "vgc": 0,       "v": 0, "a": 1, "fech": 0, "prop": 0 },
+                                                    { "nome": "Daniel Paterline",  "c": 0,   "vgc": 0,       "v": 0, "a": 0, "fech": 0, "prop": 0 },
                                                     { "nome": "Fernanda Cabanas",  "c": 0,   "vgc": 0,       "v": 0, "a": 0, "fech": 0, "prop": 0 },
                                                     { "nome": "Joao Pedro",        "c": 0,   "vgc": 0,       "v": 0, "a": 0, "fech": 0, "prop": 0 },
                                                     { "nome": "Julio Santos",      "c": 0,   "vgc": 0,       "v": 0, "a": 0, "fech": 0, "prop": 0 }
